@@ -18,12 +18,19 @@
 *.mov
 *.mkv
 
-# Ignore data, models, outputs, and virtual environments
-data/
-models/
-outputs/
+# Ignore virtual environments only
 venv*/
 __pycache__/
 .DS_Store
 Thumbs.db 
-e4e_ffhq_encode.pt 
+models/e4e_ffhq_encode.pt 
+
+# Allow data, models, and outputs folders except .pt files
+!data/
+!models/
+!outputs/ 
+
+# Allow models/ directory, but exclude large files
+models/*.pt
+models/*.pth
+models/*.ckpt 
