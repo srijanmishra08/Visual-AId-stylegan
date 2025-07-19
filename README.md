@@ -65,6 +65,7 @@ Visual-AId-stylegan/
 python scripts/generate_samples.py --num 5 --out outputs/samples
 ```
 - Output: `outputs/samples/sample_1.png`, etc.
+*Generates random face images using the pretrained StyleGAN2 model. Useful for quickly visualizing the model's generative capability or for creating test images.*
 
 ### 2. Encode Real Face to Latent Space
 
@@ -73,6 +74,7 @@ python scripts/encode_face.py --img path/to/your_face.jpg --encoder e4e --out ou
 ```
 - Output: Latent code in `outputs/latents/`, reconstruction in `outputs/reconstructions/`
 - Requires e4e weights (`models/e4e_ffhq_encode.pt`)
+*Projects a real face image into the StyleGAN2 latent space using the e4e encoder. This is the first step for editing real images in the GAN latent space.*
 
 ### 3. Latent Manipulation (Attribute Editing)
 
@@ -83,6 +85,7 @@ python scripts/edit_latents.py --latent outputs/latents/your_latent.npy \
 ```
 - Output: Edited latent in `outputs/latents/`, edited image in `outputs/edits/`
 - Requires direction files (e.g., `smile.npy`)
+*Edits a latent code by moving it along one or more attribute directions (e.g., smile, jawline). This enables semantic facial attribute editing.*
 
 ### 4. Attribute Editing & Comparison
 
@@ -90,6 +93,7 @@ python scripts/edit_latents.py --latent outputs/latents/your_latent.npy \
 python scripts/compare_images.py --original path/to/original.png --edited path/to/edited.png --out outputs/before_after
 ```
 - Output: Side-by-side comparison in `outputs/before_after/`
+*Creates a side-by-side comparison of the original and edited images. Useful for visualizing the effect of latent edits.*
 
 ### 5. Test the Full Pipeline
 
@@ -97,6 +101,7 @@ python scripts/compare_images.py --original path/to/original.png --edited path/t
 python scripts/test_pipeline.py
 ```
 - Runs the above steps in sequence for a test image (requires all weights and direction files).
+*Runs the entire pipeline (sample generation, encoding, editing, comparison) in sequence to verify that all steps work as expected.*
 
 ---
 
@@ -137,4 +142,8 @@ See `project_checklist.txt` for current progress and next steps.
 - If you encounter missing module errors, ensure all dependencies are installed and PYTHONPATH includes `encoder4editing/` and `models/stylegan2/rosinality/`.
 - For CUDA errors, try running with `--device cpu` or ensure your CUDA drivers and PyTorch versions are compatible.
 
---- 
+---
+
+## Contact
+
+For suggestions or questions, reach out to srijanmishram@gmail.com 

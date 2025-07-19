@@ -9,4 +9,5 @@
 [ ] 9. Build unified webapp UI for user uploads, edits, and model selection (StyleGAN2, Diffusion, LoRA)
 [ ] 10. Integrate Stable Diffusion model for advanced editing
 [ ] 11. Add LoRA support for efficient fine-tuning (for StyleGAN2 and Diffusion)
-[ ] 12. (Optional) Add custom loss functions, evaluation metrics, fairness notes 
+[ ] 12. (Optional) Add custom loss functions, evaluation metrics, fairness notes
+[ ] 13. Add robust logging for pipeline and webapp 
