@@ -1,0 +1,29 @@
+# Ignore model weights, datasets, outputs, and large binaries
+*.pt
+*.pkl
+*.npy
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.zip
+*.tar
+*.tar.gz
+*.h5
+*.ckpt
+*.npz
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Ignore data, models, outputs, and virtual environments
+data/
+models/
+outputs/
+venv*/
+__pycache__/
+.DS_Store
+Thumbs.db 
+e4e_ffhq_encode.pt 
