@@ -1,12 +1,27 @@
+# Core deep learning
+torch==1.6.0
+torchvision==0.7.1
 
-facenet-pytorch
-opencv-python
+# Face recognition and image processing
+facenet-pytorch==2.5.2
+opencv-python==4.2.0.34
+pillow==7.1.2
+imageio==2.8.0
+scikit-image==0.17.2
+
+# Plotting and notebook
+matplotlib==3.2.1
+notebook==6.0.3
+
+# Utilities
+scikit-learn==0.23.1
+tqdm==4.46.0
+pyyaml
+requests==2.23.0
+
+# Web UI (optional)
 streamlit
-matplotlib
 
-scikit-learn
-tqdm
-notebook 
 # For StyleGAN2 support (choose one implementation):
 stylegan2_pytorch  # pip version, or use official/rosinality repo as needed
 # If using official NVIDIA or Rosinality implementation, follow their manual install instructions. 

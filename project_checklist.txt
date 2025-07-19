@@ -2,9 +2,11 @@
 [x] 2. Download StyleGAN2 weights (FFHQ .pkl and .pt)
 [x] 3. Use precomputed latents/boundaries for editing
 [x] 4. Refactor code for CPU fallback (patch CUDA extension loading)
-[ ] 5. Resolve persistent Windows/Python/conda version conflicts (pipeline testing blocked)
-[ ] 6. Test encode real face pipeline (once environment is stable)
-[ ] 7. Implement latent space manipulation (edit attributes)
-[ ] 8. Reconstruct and show before/after
-[ ] 9. Build simple webapp UI for user uploads and edits
-[ ] 10. (Optional) Add custom loss functions, evaluation metrics, fairness notes, Diffusion/LoRA support 
+[x] 5. Resolve persistent Windows/Python/conda version conflicts (pipeline testing blocked)
+[x] 6. Test encode real face pipeline (once environment is stable)
+[x] 7. Implement latent space manipulation (edit attributes)
+[x] 8. Reconstruct and show before/after
+[ ] 9. Build unified webapp UI for user uploads, edits, and model selection (StyleGAN2, Diffusion, LoRA)
+[ ] 10. Integrate Stable Diffusion model for advanced editing
+[ ] 11. Add LoRA support for efficient fine-tuning (for StyleGAN2 and Diffusion)
+[ ] 12. (Optional) Add custom loss functions, evaluation metrics, fairness notes 
