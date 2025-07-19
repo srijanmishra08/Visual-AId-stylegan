@@ -1,0 +1,12 @@
+
+facenet-pytorch
+opencv-python
+streamlit
+matplotlib
+
+scikit-learn
+tqdm
+notebook 
+# For StyleGAN2 support (choose one implementation):
+stylegan2_pytorch  # pip version, or use official/rosinality repo as needed
+# If using official NVIDIA or Rosinality implementation, follow their manual install instructions. 

@@ -1,0 +1,10 @@
+[x] 1. Environment setup (requirements.txt, folder structure)
+[x] 2. Download StyleGAN2 weights (FFHQ .pkl and .pt)
+[x] 3. Use precomputed latents/boundaries for editing
+[x] 4. Refactor code for CPU fallback (patch CUDA extension loading)
+[ ] 5. Resolve persistent Windows/Python/conda version conflicts (pipeline testing blocked)
+[ ] 6. Test encode real face pipeline (once environment is stable)
+[ ] 7. Implement latent space manipulation (edit attributes)
+[ ] 8. Reconstruct and show before/after
+[ ] 9. Build simple webapp UI for user uploads and edits
+[ ] 10. (Optional) Add custom loss functions, evaluation metrics, fairness notes, Diffusion/LoRA support 
